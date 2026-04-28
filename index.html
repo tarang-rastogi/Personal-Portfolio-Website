@@ -77,12 +77,13 @@
                 </div>
                 <div class="column-2">
                     <h1 class="sub-title">About Me</h1>
-                    <h4>Detail-oriented <span>BCA student</span> specializing in Cloud Computing and Cyber Security,
-                        with hands-on experience in Frontend and Python development. </h4>
-                    <p>Skilled in building
-                        responsive web interfaces and functional applications through practical projects
-                        and internships. Seeking an entry-level developer role to apply my skills in
-                        React, Python, and cloud technologies.</p>
+                    <h4>Frontend developer with a strong foundation in <span>JavaScript</span> and <span> Python</span>
+                        . </h4>
+                    <p>I work with HTML, CSS, and JavaScript to create clean interfaces, while expanding my skills in
+                        Python for backend development and problem-solving. Alongside this, I continuously explore cloud
+                        technologies, Linux, and modern tools to stay aligned with industry demands. <br> I’m currently
+                        looking for opportunities to apply my skills, gain real-world experience, and grow into a
+                        full-stack developer.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
                         <p class="tab-links" onclick="opentab('Internship')">Internship</p>
@@ -130,32 +131,39 @@
                     </div>
                     <div class="tab-contents" id="Certificate">
                         <div class="content">
-                            <p> 1.  Introduction to Generative AI Studio —<span>Simplelearn (Google Cloud)</span> <br><br>
-                                2.  Agent AI Starter Course —<span>Saumya Singh</span> <br><br>
+                            <i class="fa-solid fa-robot cont-icon hover-effect"></i>
+                            <p>Introduction to Generative AI Studio<br><span>Simplelearn (Google Cloud)</span></p>
+                        </div>
+                        <div class="content">
+                            <i class="fa-solid fa-brain cont-icon hover-effect"></i>
+                            <p>Agent AI Starter Course <br><span>Saumya Singh</span></p>
+                        </div>
+                        <div class="content">
+                            <i class="fa-solid fa-cloud cont-icon hover-effect"></i>
+                            <p>Introduction to Cloud Computing <br><span>IIT Kanpur (E & ICT Academy)</span></p>
+                        </div>
+                        <div class="content">
+                            <i class="fa-brands fa-linux cont-icon hover-effect"></i>
+                            <p>Linux Administration with Scripting <br><span>IIT Kanpur (E & ICT Academy)</span></p>
+                        </div>
+                        <div class="content">
+                            <i class="fa-brands fa-microsoft cont-icon hover-effect"></i>
+                            <p>Microsoft Azure Fundamentals<br><span>IIT Kanpur (E & ICT Academy)</span></p>
+                        </div>
+                        <!-- <div class="content">
+                            <p> 1.  Introduction to Generative AI Studio —<span></span> <br><br>
+                                2.  —<span>Saumya Singh</span> <br><br>
                                 3.  Cloud Computing —<span>IIT Kanpur (E & ICT Academy)</span> <br><br>
                                 4.  Linux Administration with Scripting —<span> IIT Kanpur (E & ICT Academy)</span> <br><br>
                                 5.  Microsoft Azure Fundamentals —<span>IIT Kanpur (E & ICT Academy)</span> <br></p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-<script>
-    let tabLinks=document.getElementsByClassName('tab-links');
-    let tabContents=document.getElementsByClassName('tab-contents');
-    function opentab(tabname){
-        for(tablink of tabLinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabContents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add('active-link')
-        document.getElementById(tabname).classList.add('active-tab')
-    }
-</script>
+    <script src="script.js"></script>
 
 </body>
 
