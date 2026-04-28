@@ -84,28 +84,79 @@
                         and internships. Seeking an entry-level developer role to apply my skills in
                         React, Python, and cloud technologies.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Education</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Certificate</p>
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Internship')">Internship</p>
+                        <p class="tab-links" onclick="opentab('Certificate')">Certificate</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="Education">
                         <div class="content">
                             <i class="fa-solid fa-graduation-cap cont-icon hover-effect"></i>
-                            <p>Bachelar of Computer Application <br>specialization in Cloud Computing & Cyber Security</p>
+                            <div class="role">
+                                <p>Bachelor of Computer Application</p>
+                                <div class="company">
+                                    <span>Specialization in Cloud Computing & Cyber Security</span>
+                                    <p>2023 - 2026</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="content">
                             <i class="fa-solid fa-location-dot cont-icon hover-effect"></i>
-                            <p>Meerut, Uttar Pradesh, India</p>
+                            <p>Meerut, Uttar Pradesh,<br><span>India</span> </p>
                         </div>
                         <div class="content">
                             <i class="fa-solid fa-magnifying-glass cont-icon hover-effect"></i>
-                            <p>Frontend Developer & Python Developer</p>
+                            <p>Open for: <br><span>Frontend Developer, Python Developer, Software Developer</span></p>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="Internship">
+                        <div class="content">
+                            <i class="fa-sharp fa-solid fa-laptop cont-icon hover-effect"></i>
+                            <div class="role">
+                                <p>Python Programming Intern </p>
+                                <div class="company">
+                                    <span>Oasis Infobyte (OIBSIP)</span>
+                                    <p>March 2026 - April 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="fa-solid fa-location-dot cont-icon hover-effect"></i>
+                            <p>Remote<br><span>Meerut, Uttar Pradesh, India</span></p>
+                        </div>
+                        <div class="content">
+                            <i class="fa-solid fa-code cont-icon hover-effect"></i>
+                            <p>Skills <br><span>Python, Tkinter, APIs, JSON, OOP, Git/GitHub</span></p>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="Certificate">
+                        <div class="content">
+                            <p> 1.  Introduction to Generative AI Studio —<span>Simplelearn (Google Cloud)</span> <br><br>
+                                2.  Agent AI Starter Course —<span>Saumya Singh</span> <br><br>
+                                3.  Cloud Computing —<span>IIT Kanpur (E & ICT Academy)</span> <br><br>
+                                4.  Linux Administration with Scripting —<span> IIT Kanpur (E & ICT Academy)</span> <br><br>
+                                5.  Microsoft Azure Fundamentals —<span>IIT Kanpur (E & ICT Academy)</span> <br></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+<script>
+    let tabLinks=document.getElementsByClassName('tab-links');
+    let tabContents=document.getElementsByClassName('tab-contents');
+    function opentab(tabname){
+        for(tablink of tabLinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabContents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add('active-link')
+        document.getElementById(tabname).classList.add('active-tab')
+    }
+</script>
+
 </body>
 
 </html>
