@@ -8,43 +8,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- HOME SECTION -->
+    <nav>
+        <div class="logo">
+            <h1><span>T</span>R</h1>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Skills</a></li>
+        </ul>
+        <div class="contact">
+            <a href="#" class="hover-effect">Contact</a>
+        </div>
+    </nav>
     <div id="header">
         <div class="container">
-            <nav>
-                <div class="logo">
-                    <h1><span>T</span>R</h1>
+
+            <div class="head">
+                <div class="header-text">
+                    <h1>Hello, I'm <br><span>Tarang Rastogi</span></h1>
+                    <h3>Frontend Developer | Aspiring Python Developer</h3>
+                    <p>I build responsive, user-friendly websites and Python applications.<br>
+                        Currently pursuing BCA with a specialization in Cloud Computing & Cyber Security.</p>
                 </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                </ul>
-                <div class="contact">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="#" class="hover-effect">Contact</a>
+                <div class="link-icons">
+                    <a href="#" class="icons hover-effect"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#" class="icons hover-effect"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="icons hover-effect"><i class="fa-brands fa-github"></i></a>
                 </div>
-            </nav>
-            <div class="header-text">
-                <h1>Hello, I'm <br><span>Tarang Rastogi</span></h1>
-                <h3>Frontend Developer | Aspiring Python Developer</h3>
-                <p>I build responsive, user-friendly websites and Python applications.<br>
-                    Currently pursuing BCA with a specialization in Cloud Computing & Cyber Security.</p>
-            </div>
-            <div class="link-icons">
-                <a href="#" class="icons hover-effect"><i class="fa-solid fa-envelope"></i></a>
-                <a href="#" class="icons hover-effect"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="icons hover-effect"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <div class="download">
-                <a href="#" class="download-btn  hover-effect">Download CV</a>
-                <a href="#" class="my-work">Explore My Work</a>
+                <div class="download">
+                    <a href="IMAGES/Tarang_Rastogi_Frontend_Developer.pdf" download
+                        class="download-btn  hover-effect">Download CV</a>
+                    <a href="#" class="my-work">Explore My Work</a>
+                </div>
             </div>
             <div class="info">
                 <div class="info-box">
@@ -64,6 +68,10 @@
                     <p>Internship Completed</p>
                 </div>
             </div>
+            <div class="head scroll">
+                <p>Scroll for Explore</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
         </div>
     </div>
 
@@ -72,22 +80,19 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="column-1">
-                    <img src="IMAGES/img.jpeg">
-                </div>
                 <div class="column-2">
-                    <h1 class="sub-title">About Me</h1>
+                    <h1 class="sub-title1">About Me</h1>
                     <h4>Frontend developer with a strong foundation in <span>JavaScript</span> and <span> Python</span>
                         . </h4>
                     <p>I work with HTML, CSS, and JavaScript to create clean interfaces, while expanding my skills in
                         Python for backend development and problem-solving. Alongside this, I continuously explore cloud
-                        technologies, Linux, and modern tools to stay aligned with industry demands. <br> I’m currently
+                        technologies, Linux, and modern tools to stay aligned with industry demands. <br> I'm currently
                         looking for opportunities to apply my skills, gain real-world experience, and grow into a
                         full-stack developer.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
                         <p class="tab-links" onclick="opentab('Internship')">Internship</p>
-                        <p class="tab-links" onclick="opentab('Certificate')">Certificate</p>
+                        <p class="tab-links" onclick="opentab('Certificate')">Certificates</p>
                     </div>
                     <div class="tab-contents active-tab" id="Education">
                         <div class="content">
@@ -130,14 +135,14 @@
                         </div>
                     </div>
                     <div class="tab-contents" id="Certificate">
-                        <div class="content">
+                        <!-- <div class="content">
                             <i class="fa-solid fa-robot cont-icon hover-effect"></i>
                             <p>Introduction to Generative AI Studio<br><span>Simplelearn (Google Cloud)</span></p>
                         </div>
                         <div class="content">
                             <i class="fa-solid fa-brain cont-icon hover-effect"></i>
                             <p>Agent AI Starter Course <br><span>Saumya Singh</span></p>
-                        </div>
+                        </div> -->
                         <div class="content">
                             <i class="fa-solid fa-cloud cont-icon hover-effect"></i>
                             <p>Introduction to Cloud Computing <br><span>IIT Kanpur (E & ICT Academy)</span></p>
@@ -150,18 +155,188 @@
                             <i class="fa-brands fa-microsoft cont-icon hover-effect"></i>
                             <p>Microsoft Azure Fundamentals<br><span>IIT Kanpur (E & ICT Academy)</span></p>
                         </div>
-                        <!-- <div class="content">
-                            <p> 1.  Introduction to Generative AI Studio —<span></span> <br><br>
-                                2.  —<span>Saumya Singh</span> <br><br>
-                                3.  Cloud Computing —<span>IIT Kanpur (E & ICT Academy)</span> <br><br>
-                                4.  Linux Administration with Scripting —<span> IIT Kanpur (E & ICT Academy)</span> <br><br>
-                                5.  Microsoft Azure Fundamentals —<span>IIT Kanpur (E & ICT Academy)</span> <br></p>
-                        </div> -->
+                    </div>
+                </div>
+                <div class="column-1">
+                    <img src="IMAGES/code.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------SKILL SECTION------------- -->
+    <div id="skills">
+        <div class="container">
+            <div class="skill-text">
+                <h1 class="sub-title"><span>Technologies</span> I Use</h1>
+                <p>I use these technologies to build responsive website and develop python-based projects.</p>
+            </div>
+            <div class="tech-skills">
+                <div class="skill-box">
+                    <i class="devicon-html5-plain colored"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-box">
+                    <i class="devicon-css3-plain colored"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-box">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-box">
+                    <i class="devicon-react-original colored"></i>
+                    <p>React</p>
+                </div>
+                <div class="skill-box">
+                    <i class="devicon-python-plain colored"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-box">
+                    <i class="devicon-java-plain colored"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill-box">
+                    <i class="devicon-github-original"></i>
+                    <p>GitHub</p>
+                </div>
+                <div class="skill-box">
+                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                    <p>AWS</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ------------------ PROJECT SECTION---------------------- -->
+    <div id="project">
+        <div class="container">
+            <div class="project-text">
+                <h1 class="sub-title"><span>MY</span> WORK</h1>
+                <p>These are my projects </p>
+            </div>
+            <div class="demo">
+                <div class="project-box">
+                    <div class="layer">
+                        <h1>Personal Portfolio Website</h1>
+                        <p>
+                            Developed a modern and fully responsive portfolio website to showcase projects,
+                            achievements, and professional information through a clean and user-friendly interface.
+                            Focused on creating structured layouts, smooth navigation, interactive sections, and an
+                            engaging user experience across different screen sizes. Continuously enhancing the website
+                            with improved design, responsiveness, and performance optimization.
+                        </p>
+                        <div class="lang">
+                            <span>Html5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                        <div class="live-demo">
+                            <div class="view  hover-effect">
+                                <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <span>View <br> Project</span>
+                            </div>
+                            <div class="source">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                <span>Source <br> code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="layer">
+                        <h1>Weather App Using API</h1>
+                        <p>
+                            Developed a dynamic weather application that provides real-time weather updates based on
+                            user location or searched cities. Integrated live weather data to display temperature,
+                            weather conditions, humidity, wind speed, and other forecast details through a clean and
+                            interactive interface. Focused on responsive design, smooth user interaction, and accurate
+                            data presentation to enhance the overall user experience.
+                        </p>
+                        <div class="lang">
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                            <span>API Integration</span>
+                            <span>JSON</span>
+                            <span>GUI Development</span>
+                        </div>
+                        <div class="live-demo">
+                            <div class="view  hover-effect">
+                                <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <span>View <br> Project</span>
+                            </div>
+                            <div class="source">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                <span>Source <br> code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="layer">
+                        <h1>Amazon Homepage Clone</h1>
+                        <p>
+                            Developed a responsive clone of the Amazon homepage with a structured layout and modern user
+                            interface inspired by the original platform. Recreated key sections including the navigation
+                            bar, search area, product categories, banners, and footer while maintaining visual
+                            consistency and smooth user interaction. Focused on responsive design, organized content
+                            presentation, and improving frontend development skills through real-world UI
+                            implementation.
+                        </p>
+                        <div class="lang">
+                            <span>Html5</span>
+                            <span>CSS3</span>
+                            <span>Responsive Design</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="live-demo">
+                            <div class="view hover-effect">
+                                <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <span>View <br> Project</span>
+                            </div>
+                            <div class="source">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                <span>Source <br> code</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ---------------- CONTACT SECTION------------------ -->
+
+    <div id="contact1">
+        <div class="container">
+
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><span>CONTACT</span> ME</h1>
+                    <p><i class="fas fa-paper-plane"></i> tarangrastogi9@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9389293196</p>
+                    <div class="link-icons">
+                        <a href="#" class="icons hover-effect"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="icons hover-effect"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter your Name" required>
+                        <input type="email" name="E-mail" placeholder="Enter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter the message"></textarea>
+                        <button type="submit" class="download-btn  hover-effect">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2026 Tarang Rastogi | Designed & Developed with
+            <span class="heart"><i class="fa-solid fa-heart"></i></span>
+        </p>
+    </div>
+
 
     <script src="script.js"></script>
 
