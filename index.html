@@ -19,15 +19,19 @@
         <div class="logo">
             <h1><span>T</span>R</h1>
         </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Skills</a></li>
+        <ul id="sidemenu">
+            <li><a href="#header" class="active-effect">Home</a></li>
+            <li><a href="#about" class="active-effect">About</a></li>
+            <li><a href="#skills" class="active-effect">Skills</a></li>
+            <li><a href="#project" class="active-effect">Projects</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+
         <div class="contact">
-            <a href="#" class="hover-effect">Contact</a>
+            <a href="#contact1" class="active-effect hover-effect">Contact</a>
         </div>
+
     </nav>
     <div id="header">
         <div class="container">
@@ -35,7 +39,7 @@
             <div class="head">
                 <div class="header-text">
                     <h1>Hello, I'm <br><span>Tarang Rastogi</span></h1>
-                    <h3>Frontend Developer | Aspiring Python Developer</h3>
+                    <h3>Frontend & Python Developer</h3>
                     <p>I build responsive, user-friendly websites and Python applications.<br>
                         Currently pursuing BCA with a specialization in Cloud Computing & Cyber Security.</p>
                 </div>
@@ -45,9 +49,9 @@
                     <a href="#" class="icons hover-effect"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <div class="download">
-                    <a href="IMAGES/Tarang_Rastogi_Frontend_Developer.pdf" download
+                    <a href="IMAGES/TarangRastogi.dev.pdf" download
                         class="download-btn  hover-effect">Download CV</a>
-                    <a href="#" class="my-work">Explore My Work</a>
+                    <a href="#about" class="my-work">Explore My Work</a>
                 </div>
             </div>
             <div class="info">
@@ -80,19 +84,22 @@
     <div id="about">
         <div class="container">
             <div class="row">
+                <div class="column-1">
+                    <img src="IMAGES/img.jpeg">
+                </div>
                 <div class="column-2">
                     <h1 class="sub-title1">About Me</h1>
                     <h4>Frontend developer with a strong foundation in <span>JavaScript</span> and <span> Python</span>
-                        . </h4>
+                    </h4>
                     <p>I work with HTML, CSS, and JavaScript to create clean interfaces, while expanding my skills in
                         Python for backend development and problem-solving. Alongside this, I continuously explore cloud
                         technologies, Linux, and modern tools to stay aligned with industry demands. <br> I'm currently
                         looking for opportunities to apply my skills, gain real-world experience, and grow into a
                         full-stack developer.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
-                        <p class="tab-links" onclick="opentab('Internship')">Internship</p>
-                        <p class="tab-links" onclick="opentab('Certificate')">Certificates</p>
+                        <p class="tab-links active-link active-effect" onclick="opentab('Education') ">Education</p>
+                        <p class="tab-links active-effect" onclick="opentab('Internship') ">Internship</p>
+                        <p class="tab-links active-effect" onclick="opentab('Certificate') ">Certificates</p>
                     </div>
                     <div class="tab-contents active-tab" id="Education">
                         <div class="content">
@@ -156,9 +163,6 @@
                             <p>Microsoft Azure Fundamentals<br><span>IIT Kanpur (E & ICT Academy)</span></p>
                         </div>
                     </div>
-                </div>
-                <div class="column-1">
-                    <img src="IMAGES/code.jpeg">
                 </div>
             </div>
         </div>
@@ -315,7 +319,7 @@
                     <h1 class="sub-title"><span>CONTACT</span> ME</h1>
                     <p><i class="fas fa-paper-plane"></i> tarangrastogi9@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i> 9389293196</p>
-                    <div class="link-icons">
+                    <div class="link-icons1">
                         <a href="#" class="icons hover-effect"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="#" class="icons hover-effect"><i class="fa-brands fa-github"></i></a>
                     </div>
