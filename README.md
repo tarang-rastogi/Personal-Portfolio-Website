@@ -54,7 +54,8 @@ Personal-Portfolio-Website/
 
 ## 🖥️ Desktop View
 
-<img width="1583" height="825" alt="WhatsApp Image 2026-05-22 at 7 22 22 PM" src="https://github.com/user-attachments/assets/b2284d78-44dd-46ae-925f-352188056a87" />
+<img width="1600" height="833" alt="WhatsApp Image 2026-05-22 at 7 30 55 PM" src="https://github.com/user-attachments/assets/19875f0c-8073-4272-ba45-f5f96f5e43a3" />
+
 
 ## 📱 Mobile View
 
